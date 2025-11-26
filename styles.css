@@ -1,0 +1,194 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f5;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+header {
+    
+    margin-bottom: 0; 
+    padding-top: 30px;
+    width: 100%; 
+    max-width: 350px; 
+    display: block;
+}
+
+
+#app-logo {
+    width: 180px; 
+    height: auto;
+    margin-bottom: 30px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+
+
+.timer-container, 
+#game-interface {
+    background: #fff;
+    padding: 20px 25px; 
+    border-radius: 40px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 350px; 
+    width: 90%;
+}
+
+
+#timer-display {
+    font-size: 5em; 
+    font-weight: 700;
+    color: #007bff; 
+    margin-bottom: 5px;
+    line-height: 1.2; 
+}
+
+
+.control-btn {
+    padding: 10px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; 
+    background-color: #e0e0e0; 
+    color: #333;
+    transition: background-color 0.3s, transform 0.1s;
+    margin: 5px 0 15px 0;
+    font-weight: 600;
+}
+.control-btn:active {
+    transform: scale(0.98);
+}
+
+
+#game-interface {
+    margin-top: 20px;
+    padding: 25px;
+    max-width: 350px; 
+}
+
+#theme-selection,
+#difficulty-selection,
+#answer-options {
+    display: flex; 
+    flex-direction: column;
+    gap: 12px; 
+    margin-top: 20px;
+}
+
+.theme-btn,
+.difficulty-btn,
+.answer-btn {
+    width: 100%;
+    margin: 0; 
+    padding: 18px 12px; 
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: opacity 0.3s;
+    text-transform: none;
+}
+
+
+.theme-btn:disabled,
+.difficulty-btn:disabled,
+.answer-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.theme-btn { color: white; }
+.theme-btn[data-theme="HTML / CSS"] { background-color: #f38cb6; } 
+.theme-btn[data-theme="Cybersecurity"] { background-color: #5d75d3; } 
+.theme-btn[data-theme="Algorithms"] { background-color: #e593a8; } 
+.theme-btn[data-theme="Internet Usage"] { background-color: #55c455; } 
+.theme-btn[data-theme="Conversion Funnels"] { background-color: #af72c7; } 
+.theme-btn[data-theme="Luck"] { background-color: #ffeb3b; color: #333; } 
+
+
+.difficulty-btn { color: white; }
+.difficulty-btn[data-level="easy"] { background-color: #4caf50; } 
+.difficulty-btn[data-level="intermediate"] { background-color: #ff9800; } 
+.difficulty-btn[data-level="hard"] { background-color: #f44336; } 
+
+
+
+
+
+#question-header {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+#question-text {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 10px 0 25px 0;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+.answer-btn { 
+    background-color: white;
+    color: #333; 
+    border: 1px solid #ccc;
+    text-align: left; 
+    padding-left: 20px;
+}
+
+
+.answer-btn.correct { 
+    background-color: #28a745 !important; 
+    color: white !important;
+    border-color: #28a745 !important;
+} 
+.answer-btn.incorrect { 
+    background-color: #dc3545 !important; 
+    color: white !important;
+    border-color: #dc3545 !important;
+}
+
+
+.answer-btn.correct::before {
+    content: "✓ "; 
+    font-weight: bold;
+}
+
+.answer-btn.incorrect::before {
+    content: "X ";
+    font-weight: bold;
+}
+
+
+#message-display {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+#result-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
