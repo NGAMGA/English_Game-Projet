@@ -1,21 +1,22 @@
+// --- Game Data (Questions & Luck Actions) ---
 const questions = {
     'HTML / CSS': {
         'easy': [
-            { question: "What is the purpose of the tag <h1> ?", answers: ["A. To display a main title", "B. To insert an image", "C. To make a huge scream appear on the page"], correctIndex: 0 },
-            { question: "What does 'CSS' mean?", answers: ["A. Cascading Style Sheets", "B. Code Super Stylish", "C. Computer Style System"], correctIndex: 0 },
+            { question: "What is the purpose of the tag <h1> ?", answers: ["A. To display a main title", "B. To insert an image", "C. To make a huge scream appear on the page (fun)"], correctIndex: 0 },
+            { question: "What does 'CSS' mean?", answers: ["A. Cascading Style Sheets", "B. Code Super Stylish (fun)", "C. Computer Style System"], correctIndex: 0 },
             { question: "Which tag is used to display text in bold in HTML?", answers: ["A. <bold>", "B. <strong>", "C. <bld>"], correctIndex: 1 },
-            { question: "What is the purpose of the <br> tag in HTML?", answers: ["A. Insert a line break", "B. Create a paragraph", "C. Break the browser"], correctIndex: 0 },
+            { question: "What is the purpose of the <br> tag in HTML?", answers: ["A. Insert a line break", "B. Create a paragraph", "C. Break the browser (fun)"], correctIndex: 0 },
             { question: "Which element is used to define the document's character set?", answers: ["A. <charset>", "B. <meta charset='utf-8'>", "C. <text-encoding>"], correctIndex: 1 }
         ],
         'intermediate': [
             { question: "What language is used to style a web page?", answers: ["A. HTML", "B. CSS", "C. SQL"], correctIndex: 1 },
-            { question: "Which CSS property changes the text color?", answers: ["A. font-style", "B. color", "C. rainbow-mode"], correctIndex: 1 },
-            { question: "Inline, block, inline-block define...", answers: ["A. The display behavior of an element", "B. The dance mode of a developer", "C. The text size"], correctIndex: 0 },
+            { question: "Which CSS property changes the text color?", answers: ["A. font-style", "B. color", "C. rainbow-mode (fun)"], correctIndex: 1 },
+            { question: "Inline, block, inline-block define...", answers: ["A. The display behavior of an element", "B. The dance mode of a developer (fun)", "C. The text size"], correctIndex: 0 },
             { question: "Which CSS selector targets elements with the class 'header'?", answers: ["A. #header", "B. .header", "C. element.header"], correctIndex: 1 },
             { question: "How do you include an external CSS file in an HTML document?", answers: ["A. <script src='style.css'>", "B. <link rel='stylesheet' href='style.css'>", "C. <style link='style.css'>"], correctIndex: 1 }
         ],
         'hard': [
-            { question: "What is box-sizing used for: border-box?", answers: ["A. Include padding and border in the total size", "B. Round the corners", "C. Add a rainbow frame"], correctIndex: 0 },
+            { question: "What is box-sizing used for: border-box?", answers: ["A. Include padding and border in the total size", "B. Round the corners", "C. Add a rainbow frame (fun)"], correctIndex: 0 },
             { question: "What is the 'C' in CSS selector specificity (A, B, C, D)?", answers: ["A. ID selectors", "B. Class, attribute, and pseudo-class selectors", "C. Element selectors"], correctIndex: 1 },
             { question: "What does the pseudo-class ':nth-child(2n)' select?", answers: ["A. All odd elements", "B. All even elements", "C. Only the second element"], correctIndex: 1 },
             { question: "What is the purpose of the 'z-index' property in CSS?", answers: ["A. Define the stacking order of elements", "B. Define the shadow depth", "C. Define the zoom level"], correctIndex: 0 },
@@ -24,59 +25,60 @@ const questions = {
     },
     'Cybersecurity': {
         'easy': [
-            { question: "Why do we use a password?", answers: ["A. To secure access", "B. To prevent your chat from ordering on Amazon", "C. To speed up the connection"], correctIndex: 0 },
+            { question: "Why do we use a password?", answers: ["A. To secure access", "B. To prevent your chat from ordering on Amazon (fun)", "C. To speed up the connection"], correctIndex: 0 },
             { question: "MFA means...", answers: ["A. Multi-Factor Authentication", "B. My Fabulous Antivirus (fun)", "C. Main Firewall Alert"], correctIndex: 0 },
-            { question: "What is the simplest way to protect your computer from viruses?", answers: ["A. Install antivirus software", "B. Never turn off your computer", "C. Put stickers on the screen"], correctIndex: 0 },
+            { question: "What is the simplest way to protect your computer from viruses?", answers: ["A. Install antivirus software", "B. Never turn off your computer", "C. Put stickers on the screen (fun)"], correctIndex: 0 },
             { question: "What is the main danger of public Wi-Fi networks?", answers: ["A. Slow speed", "B. Data interception (man-in-the-middle)", "C. Too many ads"], correctIndex: 1 }
         ],
         'intermediate': [
             { question: "A fraudulent email is called...", answers: ["A. Phishing", "B. Fish&Fish", "C. Spam"], correctIndex: 0 },
-            { question: "A firewall is used to...", answers: ["A. Block unauthorized connections", "B. Stopping viruses", "C. Put out a fire"], correctIndex: 0 },
-            { question: "Virus, worm and trojan are...", answers: ["A. Types of malware", "B. A Pokémon team", "C. Security tools"], correctIndex: 0 },
-            { question: "What is a 'Trojan Horse'?", answers: ["A. Malware disguised as legitimate software", "B. A very fast computer", "C. A secure server connection"], correctIndex: 0 }
+            { question: "A firewall is used to...", answers: ["A. Block unauthorized connections", "B. Stopping viruses", "C. Put out a fire (fun)"], correctIndex: 0 },
+            { question: "Virus, worm and trojan are...", answers: ["A. Types of malware", "B. A Pokémon team (fun)", "C. Security tools"], correctIndex: 0 },
+            { question: "What is a 'Trojan Horse'?", answers: ["A. Malware disguised as legitimate software", "B. A very fast computer (fun)", "C. A secure server connection"], correctIndex: 0 }
         ],
         'hard': [
-            { question: "A Man-in-the-middle attack consists of...", answers: ["A. Intercept communications", "B. Interrupt two people who are speaking", "C. Hack a weak password"], correctIndex: 0 },
+            { question: "A Man-in-the-middle attack consists of...", answers: ["A. Intercept communications", "B. Interrupt two people who are speaking (fun)", "C. Hack a weak password"], correctIndex: 0 },
             { question: "What is the purpose of 'VPN' in cybersecurity?", answers: ["A. Encrypt communication and hide the IP", "B. Speed up the computer", "C. View videos in 4K"], correctIndex: 0 },
-            { question: "What is a 'Zero-Day' vulnerability?", answers: ["A. A flaw known by the attacker before the developer", "B. A security update", "C. A bug that appears at midnight"], correctIndex: 0 },
+            { question: "What is a 'Zero-Day' vulnerability?", answers: ["A. A flaw known by the attacker before the developer", "B. A security update (fun)", "C. A bug that appears at midnight"], correctIndex: 0 },
             { question: "What cryptographic method uses a public key and a private key?", answers: ["A. Symmetric encryption", "B. Asymmetric encryption", "C. Hashing"], correctIndex: 1 }
         ]
     },
     'Algorithms': {
         'easy': [
-            { question: "An algorithm is...", answers: ["A. An instruction recipe", "B. A very complicated dance", "C. An image"], correctIndex: 0 },
-            { question: "Bubble Sort is...", answers: ["A. A sorting algorithm", "B. A design tool", "C. An intelligent bubble machine"], correctIndex: 0 },
+            { question: "An algorithm is...", answers: ["A. An instruction recipe", "B. A very complicated dance (fun)", "C. An image"], correctIndex: 0 },
+            { question: "Bubble Sort is...", answers: ["A. A sorting algorithm", "B. A design tool", "C. An intelligent bubble machine (fun)"], correctIndex: 0 },
             { question: "What is the first step in most sorting algorithms?", answers: ["A. Swapping the first two elements", "B. Choosing the pivot", "C. Defining the size of the list"], correctIndex: 2 },
-            { question: "What does a 'Loop' allow in an algorithm?", answers: ["A. Repeat actions", "B. Stop the program", "C. Make a detour"], correctIndex: 0 }
+            { question: "What does a 'Loop' allow in an algorithm?", answers: ["A. Repeat actions", "B. Stop the program", "C. Make a detour (fun)"], correctIndex: 0 }
         ],
         'intermediate': [
-            { question: "The complexity of an algorithm measures...", answers: ["A. The time or memory used", "B. The difficulty of the developer", "C. The developer’s level of suffering"], correctIndex: 0 },
-            { question: "Which algorithm requires a sorted list?", answers: ["A. Dichotomous research", "B. Random search", "C. Search 'at a glance'"], correctIndex: 0 },
+            { question: "The complexity of an algorithm measures...", answers: ["A. The time or memory used", "B. The difficulty of the developer", "C. The developer’s level of suffering (fun)"], correctIndex: 0 },
+            { question: "Which algorithm requires a sorted list?", answers: ["A. Dichotomous research", "B. Random search", "C. Search 'at a glance' (fun)"], correctIndex: 0 },
             { question: "What is the key principle of the 'Divide and Conquer' paradigm?", answers: ["A. Recursion", "B. Iteration", "C. Direct calculation"], correctIndex: 0 },
             { question: "Which structure is best for implementing a FIFO (First-In, First-Out) queue?", answers: ["A. Stack", "B. Queue", "C. List"], correctIndex: 1 }
         ],
         'hard': [
-            { question: "Divide and Conquer consists of...", answers: ["A. Divide a problem into sub-problems", "B. Conquering the world", "C. Only works on boards"], correctIndex: 0 },
-            { question: "A greedy algorithm...", answers: ["A. Make the best local choice", "B. Eat all the resources of the PC", "C. Only works on boards"], correctIndex: 0 },
+            { question: "Divide and Conquer consists of...", answers: ["A. Divide a problem into sub-problems", "B. Conquering the world (fun)", "C. Only works on boards"], correctIndex: 0 },
+            { question: "A greedy algorithm...", answers: ["A. Make the best local choice", "B. Eat all the resources of the PC (fun)", "C. Only works on boards"], correctIndex: 0 },
             { question: "What is the typical worst-case time complexity of QuickSort?", answers: ["A. O(n log n)", "B. O(n²)", "C. O(n)"], correctIndex: 1 },
             { question: "What is 'dynamic programming' mainly used for?", answers: ["A. Optimizing problems with overlapping sub-problems", "B. Creating animated interfaces", "C. Calculating random numbers"], correctIndex: 0 }
         ]
     },
     'Internet Usage': {
         'easy': [
-            { question: "URL means...", answers: ["A. Uniform Resource Locator", "B. Unknown Robot Locator", "C. Ultra Rapid Link"], correctIndex: 0 },
-            { question: "A browser is used to...", answers: ["A. Browsing the Internet", "B. Exploring an ocean of cookies", "C. Host a site"], correctIndex: 0 },
+            { question: "URL means...", answers: ["A. Uniform Resource Locator", "B. Unknown Robot Locator (fun)", "C. Ultra Rapid Link"], correctIndex: 0 },
+            { question: "A browser is used to...", answers: ["A. Browsing the Internet", "B. Exploring an ocean of cookies (fun)", "C. Host a site"], correctIndex: 0 },
             { question: "What is HTTP mainly used for?", answers: ["A. Transferring files between servers", "B. Exchanging hypermedia documents (web)", "C. Sending emails"], correctIndex: 1 },
             { question: "What is the function of a search engine?", answers: ["A. Find information on the web", "B. Block viruses", "C. Filter spam (fun)"], correctIndex: 0 }
         ],
         'intermediate': [
-            { question: "A local IP is...", answers: ["A. Accessible in an internal network", "B. Visible everywhere", "C. The address of your connected fridge"], correctIndex: 0 },
-            { question: "Indexing a page means...", answers: ["A. Add it to the engine base", "B. Send it in a workbook", "C. Translate it"], correctIndex: 0 },
-            { question: "The DNS is used to...", answers: ["A. Convert domain names to IPs", "B. Do the Human Internet translation", "C. Encrypt the data"], correctIndex: 0 },
-            { question: "What is a 'Cookie' in the context of the Internet?", answers: ["A. A small file storing user information (preferences, login)", "B. A delicious dessert", "C. A security key"], correctIndex: 0 }
+            { question: "A local IP is...", answers: ["A. Accessible in an internal network", "B. Visible everywhere", "C. The address of your connected fridge (fun)"], correctIndex: 0 },
+            { question: "Indexing a page means...", answers: ["A. Add it to the engine base", "B. Send it in a workbook (fun)", "C. Translate it"], correctIndex: 0 },
+            { question: "The DNS is used to...", answers: ["A. Convert domain names to IPs", "B. Do the Human Internet translation (fun)", "C. Encrypt the data"], correctIndex: 0 },
+            { question: "What is a 'Cookie' in the context of the Internet?", answers: ["A. A small file storing user information (preferences, login)", "B. A delicious dessert (fun)", "C. A security key"], correctIndex: 0 }
         ],
         'hard': [
-            { question: "HTTPS means...", answers: ["A. Secure login", "B. “Hyper Turbo Pro Security” ", "C. Improved flow rate"], correctIndex: 0 },
+            // <-- CORRECTION APPLIQUÉE ICI : options remplacées et correctIndex mis sur la bonne définition de HTTPS
+            { question: "HTTPS means...", answers: ["A. HyperText Transfer Protocol Secure", "B. Secure login", "C. Improved flow rate"], correctIndex: 0 },
             { question: "What is the OSI model's role in networking?", answers: ["A. Provide a conceptual framework for network communication", "B. Speed up the connection", "C. Secure data transmission"], correctIndex: 0 },
             { question: "What is the standard port for HTTPS communication?", answers: ["A. 80", "B. 443", "C. 21"], correctIndex: 1 },
             { question: "What is the function of the TCP protocol?", answers: ["A. Ensure reliable data transmission and sequencing", "B. Only send data (UDP function)", "C. Define the physical connection"], correctIndex: 0 }
@@ -84,22 +86,23 @@ const questions = {
     },
     'Conversion Funnels': {
         'easy': [
-            { question: "First step of a funnel?", answers: ["A. Awareness", "B. Direct teleportation for purchase", "C. Action"], correctIndex: 0 },
-            { question: "A funnel is used to...", answers: ["A. Bring a user to an action", "B. Make users fall into a hole", "C. Creating a website"], correctIndex: 0 },
+            { question: "First step of a funnel?", answers: ["A. Awareness", "B. Direct teleportation for purchase (fun)", "C. Action"], correctIndex: 0 },
+            { question: "A funnel is used to...", answers: ["A. Bring a user to an action", "B. Make users fall into a hole (fun)", "C. Creating a website"], correctIndex: 0 },
             { question: "What is the main objective of the Awareness stage?", answers: ["A. Convert immediately", "B. Attract attention and generate traffic", "C. Ask for personal information"], correctIndex: 1 },
-            { question: "What does 'Lead' mean in a funnel?", answers: ["A. A potential customer", "B. The first employee", "C. A product error"], correctIndex: 0 }
+            { question: "What does 'Lead' mean in a funnel?", answers: ["A. A potential customer", "B. The first employee (fun)", "C. A product error"], correctIndex: 0 }
         ],
         'intermediate': [
-            { question: "The metric that measures the passage of a step is...", answers: ["A. Conversion Rate", "B. Confusion Rate ", "C. Bounce Rate"], correctIndex: 0 },
-            { question: "Consideration step example?", answers: ["A. See a product page", "B. Give the salesperson a hug", "C. Read a review"], correctIndex: 0 },
-            { question: "A bottleneck is...", answers: ["A. The stage where users give up", "B. A bottle stuck in a funnel", "C. A bug on the site"], correctIndex: 0 },
+            { question: "The metric that measures the passage of a step is...", answers: ["A. Conversion Rate", "B. Confusion Rate (fun)", "C. Bounce Rate"], correctIndex: 0 },
+            { question: "Consideration step example?", answers: ["A. See a product page", "B. Give the salesperson a hug (fun)", "C. Read a review"], correctIndex: 0 },
+            { question: "A bottleneck is...", answers: ["A. The stage where users give up", "B. A bottle stuck in a funnel (fun)", "C. A bug on the site"], correctIndex: 0 },
             { question: "What is the key metric for the 'Action' stage (Purchase)?", answers: ["A. Click rate", "B. Bounce rate", "C. Revenue/Sales"], correctIndex: 2 }
         ],
         'hard': [
-            { question: "Marketing funnel vs product funnel:", answers: ["A. Acquisition vs use", "B. The funnel product is more stylish", "C. No link"], correctIndex: 0 },
+            { question: "Marketing funnel vs product funnel:", answers: ["A. Acquisition vs use", "B. The funnel product is more stylish (fun)", "C. No link"], correctIndex: 0 },
             { question: "What does the 'A' stand for in the AIDA model (Marketing)?", answers: ["A. Action", "B. Awareness", "C. Attraction"], correctIndex: 1 },
             { question: "What is 'A/B Testing' primarily used for in a funnel?", answers: ["A. Comparing two versions to see which performs better", "B. Blocking errors", "C. Testing two browsers"], correctIndex: 0 },
-            { question: "What is the last stage of the Pirate Metrics model (AARRR)?", answers: ["A. Retention", "B. Revenue", "C. Referral"], correctIndex: 2 }
+            // <-- CORRECTION : la dernière étape d'AARRR est Revenue (B)
+            { question: "What is the last stage of the Pirate Metrics model (AARRR)?", answers: ["A. Retention", "B. Revenue", "C. Referral"], correctIndex: 1 }
         ]
     },
     
@@ -394,3 +397,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial screen
     showThemeSelection();
 });
+
