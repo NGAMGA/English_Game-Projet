@@ -5,95 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Indisputable - Digital Add-on</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="Logo_English_Game 1.svg"> 
 </head>
 <body>
-    
-    <header>
-        <img src="Logo_English_Game 1.svg" alt="Logo The Hard drives" id="app-logo">
-    </header>
-    <div class="timer-container">
-        <div id="timer-display">30</div>
-        <p id="message-display">Select your Theme (e.g., Central Square action).</p>
-    </div>
-
-    <div id="game-interface" class="timer-container">
+    <div class="container">
         
-        <div id="theme-selection">
-            <h2 id="question-header">1. Select Theme:</h2>
-            <button class="theme-btn" data-theme="HTML / CSS">HTML / CSS</button>
-            <button class="theme-btn" data-theme="Cybersecurity">Cybersecurity</button>
-            <button class="theme-btn" data-theme="Algorithms">Algorithms</button>
-            <button class="theme-btn" data-theme="Internet Usage">Internet Usage</button>
-            <button class="theme-btn" data-theme="Conversion Funnels">Conversion Funnels</button>
-            <button class="theme-btn" data-theme="Luck">LUCK SQUARE 🍀</button>
-        </div>
-        
-        <div id="difficulty-selection" style="display: none;">
-            <h2 id="question-header">2. Choose Difficulty:</h2>
-            <p id="current-theme-display"></p>
-            <button class="difficulty-btn" data-level="easy">EASY (1 square)</button>
-            <button class="difficulty-btn" data-level="intermediate">INTERMEDIATE (2 squares)</button>
-            <button class="difficulty-btn" data-level="hard">HARD (3 squares)</button>
-        </div>
-        
-        <div id="question-screen" style="display: none;">
-            <h2 id="question-header">Question:</h2>
-            <p id="current-difficulty-display"></p>
-            <p id="question-text">Question Placeholder</p>
+        <header>
+            <img id="app-logo" src="Logo_English_Game 1.svg" alt="App Logo: English Game">
             
-            <div id="answer-options">
-                <button class="answer-btn" data-index="0">Answer A</button>
-                <button class="answer-btn" data-index="1">Answer B</button>
-                <button class="answer-btn" data-index="2">Answer C</button>
+            <div class="timer-container">
+                <div id="timer-display">30</div>
+                <div id="message-display">Select your Theme.</div>
+            </div>
+        </header>
+
+        <main id="game-interface">
+            
+            <div id="theme-selection" class="screen">
+                <h2>1. Choose a Theme to Start</h2>
+                <div class="button-group">
+                    <button class="theme-btn" data-theme="HTML / CSS" style="background-color: #f38cb6;">HTML / CSS</button>
+                    <button class="theme-btn" data-theme="Cybersecurity" style="background-color: #5d75d3;">Cybersecurity</button>
+                    <button class="theme-btn" data-theme="Algorithms" style="background-color: #f44336;">Algorithms</button>
+                    <button class="theme-btn" data-theme="Internet Usage" style="background-color: #55c455;">Internet Usage</button>
+                    <button class="theme-btn" data-theme="Conversion Funnels" style="background-color: #af72c7;">Conversion Funnels</button>
+                    <button class="theme-btn" data-theme="Luck" style="background-color: #ffeb3b; color: #333;">Luck</button>
+                </div>
+                <button id="toggle-rules-btn" class="control-btn">Show Full Game Rules</button>
             </div>
 
-            <p id="result-message"></p>
-        </div>
-
-        <div class="rules-summary">
-            <h3>Movement Based on Difficulty:</h3>
-            <table>
-                <tr>
-                    <th>Difficulty</th>
-                    <th>Movement</th>
-                </tr>
-                <tr>
-                    <td>Easy</td>
-                    <td>1 square</td>
-                </tr>
-                <tr>
-                    <td>Intermediate</td>
-                    <td>2 squares</td>
-                </tr>
-                <tr>
-                    <td>Hard</td>
-                    <td>3 squares</td>
-                </tr>
-            </table>
-            
-            <p>If time runs out or the answer is wrong, the player does not move.</p>
-            
-            <button id="toggle-rules-btn" class="control-btn">Show Full Game Rules</button>
-            
             <div id="full-rules-content" style="display: none; text-align: left; padding-top: 20px;">
                 <h3>Full Game Rules: The Indisputable</h3>
-                
-                <p>The game begins with each player placing their token on the starting square, launching the application, and selecting a first player. To leave the central square and enter the path, the player freely chooses a theme, selects a difficulty level (Easy, Intermediate, Hard), answers a question, and, if correct, moves forward and chooses which branch of the circle to follow.</p>
-                
-                <p>Once on the circular path, the theme of each question is automatically determined by the color of the square the player is standing on. During each turn, the player selects a difficulty level, answers a question displayed by the application (with 30 seconds to choose from three options), and then moves forward depending on the chosen difficulty: 1 square for an easy question, 2 for medium, and 3 for hard. If the answer is wrong, the player does not move.</p>
-
-                <p>Some spaces are Chance Squares: if a player lands on one, they must follow the instruction indicated, which may offer an advantage (move forward, bonus) or a disadvantage (move back, lose a turn). The first player to complete a full lap of the circle and return to the center wins the game.</p>
-
+                <p><strong>"The Hard Drive"</strong> is an educational board game that uses a mobile application to teach digital culture. The game is played with 2 or more players who each place their token in the center of the board and launch the app; the player with the lowest ping begins.</p>
+                <p>Each turn, the app displays a multiple-choice question. At the start of the game, the player freely chooses the theme, but once on the path, the theme is determined by the color of the square their token occupies. The player then chooses a difficulty level (Easy, Intermediate, or Hard), and the app provides a question matching the theme and difficulty. The player has 30 seconds to answer. If the answer is correct, the player moves forward: 1 square for Easy, 2 squares for Intermediate, and 3 squares for Hard; a wrong answer results in no movement.</p>
+                <p>Some squares are Chance Squares, which trigger special effects shown on the board or in the app, causing bonuses or penalties such as moving forward, moving back, or losing a turn. The goal is to complete a full lap of the board and return to the center; the first player to do so wins the game.</p>
                 <h4>Key elements:</h4>
                 <ul>
-                    <li>Objective: The winner is the first player to complete a full lap and return to the Starting Square.</li>
-                    <li>Required Equipment: Board, tokens, mobile phone, and the mandatory Digital Add-on (application).</li>
+                    <li><strong>Objective:</strong> The winner is the first player to complete a full lap and return to the Starting Square (center).</li>
+                    <li><strong>Required Equipment:</strong> Board, tokens, mobile phone, and the mandatory Digital Add-on (application).</li>
+                    <li><strong>Players:</strong> 2 or more. Each player places their token in the center at the start.</li>
+                    <li><strong>Turn order:</strong> Determined at game start by lowest ping on the app.</li>
+                    <li><strong>Movement:</strong> Correct answers move the token forward: Easy = 1, Intermediate = 2, Hard = 3. Incorrect answers = no movement.</li>
+                    <li><strong>Chance Squares:</strong> Trigger instructions (bonus or penalty) shown on the board or in the app (move forward/back, lose a turn, etc.).</li>
                 </ul>
             </div>
-        </div>
+            
+            <div id="difficulty-selection" class="screen" style="display: none;">
+                <h3 id="current-theme-display"></h3>
+                <h2>2. Choose Difficulty</h2>
+                <div class="button-group">
+                    <button class="difficulty-btn" data-level="easy">Easy (Move +1)</button>
+                    <button class="difficulty-btn" data-level="intermediate">Intermediate (Move +2)</button>
+                    <button class="difficulty-btn" data-level="hard">Hard (Move +3)</button>
+                </div>
+            </div>
+
+            <div id="question-screen" class="screen" style="display: none;">
+                <h3 id="question-header">Question:</h3>
+                <div class="question-info">
+                    <span id="current-difficulty-display"></span>
+                </div>
+                <p id="question-text">Question content will appear here.</p>
+                
+                <div id="answer-options" class="button-group">
+                    <button class="answer-btn" data-index="0"></button>
+                    <button class="answer-btn" data-index="1"></button>
+                    <button class="answer-btn" data-index="2"></button>
+                </div>
+                <div id="result-message" class="result-display"></div> 
+            </div>
+        </main>
+        
     </div>
 
     <script src="script.js"></script> 
 </body>
 </html>
-
