@@ -5,21 +5,21 @@ body {
     color: #333;
     padding: 0;
     margin: 0;
-    /* Styles cruciaux pour le centrage de l'application mobile */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    justify-content: center; /* Centrer verticalement l'ensemble */
+    justify-content: center; 
 }
 
-/* Conteneur global pour simuler le cadre du téléphone */
+
 .container {
     width: 100%;
-    max-width: 400px; /* Taille maximale pour un appareil mobile */
+    max-width: 400px;
     background-color: #fff;
-    border-radius: 40px; /* Bords très arrondis pour l'effet téléphone */
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Ombre pour la profondeur */
+    border-radius: 40px; 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden; 
@@ -33,11 +33,11 @@ header {
     display: block;
 }
 
-/* Styles pour le logo */
+
 #app-logo {
     width: 180px; 
     height: auto;
-    margin: 15px auto 30px auto; /* Centré et espacé */
+    margin: 15px auto 30px auto;
     display: block; 
 }
 
@@ -115,24 +115,24 @@ header {
 }
 
 
-/* COULEURS DES THÈMES */
+
 .theme-btn { color: white; }
 .theme-btn[data-theme="HTML / CSS"] { background-color: #f38cb6; } 
 .theme-btn[data-theme="Cybersecurity"] { background-color: #5d75d3; } 
-.theme-btn[data-theme="Algorithms"] { background-color: #f44336; } /* ROUGE CORRIGÉ */
+.theme-btn[data-theme="Algorithms"] { background-color: #f44336; } 
 .theme-btn[data-theme="Internet Usage"] { background-color: #55c455; } 
 .theme-btn[data-theme="Conversion Funnels"] { background-color: #af72c7; } 
 .theme-btn[data-theme="Luck"] { background-color: #ffeb3b; color: #333; } 
 
 
-/* COULEURS DES DIFFICULTÉS */
+
 .difficulty-btn { color: white; }
 .difficulty-btn[data-level="easy"] { background-color: #4caf50; } 
 .difficulty-btn[data-level="intermediate"] { background-color: #ff9800; } 
 .difficulty-btn[data-level="hard"] { background-color: #f44336; } 
 
 
-/* QUESTION ET RÉPONSES */
+
 #question-header {
     font-size: 1.5em;
     font-weight: 800;
@@ -196,7 +196,6 @@ header {
     border: 1px solid #e9ecef;
 }
 
-/* Styles pour les règles */
 #full-rules-content {
     text-align: left;
     padding: 15px;
